@@ -35,9 +35,9 @@ const ContactForm = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          service_id: 'service_kenai',
-          template_id: 'template_kenai',
-          user_id: 'YOUR_EMAILJS_PUBLIC_KEY', // Replace with your EmailJS public key
+          service_id: 'service_kenaai',
+          template_id: 'template_kenaai',
+          user_id: '09GCvyI8uhsG_oJCX', // Replace with your EmailJS public key
           template_params: {
             to_email: 'sharmanirali1103@gmail.com',
             from_name: formData.name,
