@@ -119,6 +119,13 @@
   font-size: 0.95rem;
 }
 
+.contact-phone {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(237, 96, 66, 0.2);
   padding-top: 2rem;

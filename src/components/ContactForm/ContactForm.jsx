@@ -154,7 +154,7 @@ const ContactForm = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    placeholder="+1 (555) 000-0000"
+                    placeholder="+61 4XX XXX XXX"
                   />
                 </div>
               </div>
@@ -230,7 +230,7 @@ const ContactForm = () => {
                   <span className="benefit-icon">📈</span>
                   <div>
                     <strong>Massive Market Potential</strong>
-                    <p>150K+ stores in US, 5M+ globally</p>
+                    <p>150K+ stores in Australia, 5M+ globally</p>
                   </div>
                 </li>
                 <li>

@@ -3,6 +3,7 @@ import './Header.css';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +18,7 @@ const Header = () => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileMenuOpen(false);
     }
   };
 
@@ -29,7 +31,17 @@ const Header = () => {
             <span className="tagline">Empowering Retailers with AI</span>
           </div>
           
-          <nav className="nav">
+          <button 
+            className="hamburger-menu"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={isMobileMenuOpen ? 'open' : ''}></span>
+            <span className={isMobileMenuOpen ? 'open' : ''}></span>
+            <span className={isMobileMenuOpen ? 'open' : ''}></span>
+          </button>
+          
+          <nav className={`nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
             <button onClick={() => scrollToSection('mvp')} className="nav-link">Platform</button>
             <button onClick={() => scrollToSection('how-it-works')} className="nav-link">How It Works</button>
             <button onClick={() => scrollToSection('investment')} className="nav-link">Investment</button>

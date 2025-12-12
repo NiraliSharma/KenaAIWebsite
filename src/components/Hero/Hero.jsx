@@ -83,21 +83,6 @@ const Hero = () => {
             </button>
           </motion.div>
         </motion.div>
-
-        <motion.div
-          className="hero-visual"
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-        >
-          <div className="visual-placeholder">
-            <div className="placeholder-content">
-              <span className="placeholder-icon">🎥</span>
-              <p>High-quality hero visual</p>
-              <p className="placeholder-note">Modern retail store with AI overlay graphics</p>
-            </div>
-          </div>
-        </motion.div>
       </div>
 
       <div className="hero-background">

@@ -5,23 +5,21 @@ import './FutureAddOns.css';
 const FutureAddOns = () => {
   const addOns = [
     {
-      id: 1,
-      title: 'Autonomous Billing & Checkout-Free Experience',
-      description: 'The system will track products picked by each customer using advanced camera vision, automatically generating a virtual cart and triggering seamless payment at exit via mobile app or QR code.',
+      id: 4,
+      title: 'POS & ERP Integration',
       features: [
-        'Will enable frictionless shopping experience',
-        'Will integrate with customer receipt app',
-        'Will support digital receipts and loyalty programs',
-        'Will reduce checkout wait times to zero'
+        'Will sync with major POS systems',
+        'Will integrate with existing ERP solutions',
+        'Will support loyalty program integration',
+        'Will provide unified data management'
       ],
-      icon: '💳',
+      icon: '🔗',
       imageUrl: '', // Add your image URL here
       timeline: 'Phase 2 Development'
     },
     {
       id: 2,
       title: 'Advanced Analytics & Reporting',
-      description: 'Comprehensive analytics platform that will provide sales heatmaps, conversion rate analysis (footfall vs purchases), and predictive insights to optimize business operations.',
       features: [
         'Will identify best-selling products and peak times',
         'Will analyze customer conversion patterns',
@@ -35,7 +33,6 @@ const FutureAddOns = () => {
     {
       id: 3,
       title: 'Predictive Inventory Management',
-      description: 'AI-driven system that will suggest optimal restock orders based on historical trends, automatically generate low-stock purchase lists, and integrate seamlessly with supplier systems.',
       features: [
         'Will predict demand with high accuracy',
         'Will automate reordering processes',
@@ -47,23 +44,22 @@ const FutureAddOns = () => {
       timeline: 'Phase 3 Development'
     },
     {
-      id: 4,
-      title: 'POS & ERP Integration',
-      description: 'KeNaAI will work seamlessly with your current POS and inventory systems, synchronizing with sales platforms, inventory tools, and loyalty programs while exporting data for accounting and supply planning.',
+      id: 1,
+      title: 'Autonomous Billing & Checkout-Free Experience',
       features: [
-        'Will sync with major POS systems',
-        'Will integrate with existing ERP solutions',
-        'Will support loyalty program integration',
-        'Will provide unified data management'
+        'Will enable frictionless shopping experience',
+        'Will integrate with customer receipt app',
+        'Will support digital receipts and loyalty programs',
+        'Will reduce checkout wait times to zero'
       ],
-      icon: '🔗',
+      icon: '💳',
       imageUrl: '', // Add your image URL here
-      timeline: 'Phase 3 Development'
-    },
+      timeline: 'Phase 4 Development'
+    }
+    ,
     {
       id: 5,
       title: 'Smart Signage & Dynamic In-Store Advertising',
-      description: 'Intelligent system that will trigger personalized promotional messages based on customer dwell time and product interest, linking customer location to nearby digital displays for targeted marketing.',
       features: [
         'Will deliver personalized promotions',
         'Will increase promotional effectiveness',
@@ -113,10 +109,8 @@ const FutureAddOns = () => {
               </div>
 
               <h3 className="addon-title">{addon.title}</h3>
-              <p className="addon-description">{addon.description}</p>
 
               <div className="addon-features">
-                <h4 className="features-heading">Planned Capabilities:</h4>
                 <ul className="features-list">
                   {addon.features.map((feature, idx) => (
                     <li key={idx} className="feature-item">

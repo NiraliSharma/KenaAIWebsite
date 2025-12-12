@@ -44,6 +44,7 @@ const Footer = () => {
 
           <div className="footer-section">
             <h3 className="footer-heading">Connect</h3>
+            <p className="contact-phone">+61 4XX XXX XXX</p>
             {/* Social links temporarily commented out */}
             {/* <div className="social-links">
               <a href="#" className="social-link" aria-label="LinkedIn">

@@ -106,23 +106,6 @@ const DemoVideo = () => {
             <p>Discover how data-driven recommendations will optimize store performance</p>
           </div>
         </motion.div>
-
-        <motion.div
-          className="demo-cta"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <h3>Ready to Transform Your Retail Operations?</h3>
-          <p>Join us in revolutionizing the retail industry with accessible, scalable AI technology</p>
-          <button 
-            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-            className="cta-button"
-          >
-            Schedule an Investment Discussion
-          </button>
-        </motion.div>
       </div>
     </section>
   );

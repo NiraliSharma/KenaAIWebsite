@@ -33,8 +33,10 @@
   transition: all 0.3s ease;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  align-items: center;
+  gap: 0;
+  align-items: stretch;
+  min-height: 350px;
+  max-height: 350px;
 }
 
 .feature-card:nth-child(even) {
@@ -53,7 +55,7 @@
 
 .feature-media {
   position: relative;
-  min-height: 350px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -97,27 +99,29 @@
 }
 
 .feature-content {
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.5rem;
 }
 
 .feature-title {
-  font-size: clamp(1.5rem, 2.5vw, 1.75rem);
+  font-size: clamp(1.3rem, 2.5vw, 1.5rem);
   color: #0A0A0A;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
 .feature-description {
   color: #333333;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
 }
 
 .feature-benefits {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .benefits-badges {

@@ -112,20 +112,6 @@ const HowItWorks = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          className="process-visual"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="visual-placeholder">
-            <span className="placeholder-icon">🎬</span>
-            <p>Process flow animation</p>
-            <p className="placeholder-note">Visual demonstration of camera → AI → Dashboard → Action</p>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
