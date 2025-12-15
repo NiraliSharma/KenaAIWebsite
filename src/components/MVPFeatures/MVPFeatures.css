@@ -147,6 +147,8 @@
   .feature-card {
     grid-template-columns: 1fr;
     direction: ltr !important;
+    min-height: auto;
+    max-height: none;
   }
 
   .feature-card:nth-child(even) {
@@ -160,6 +162,7 @@
 
   .feature-media {
     min-height: 250px;
+    height: auto;
   }
 
   .feature-image {
@@ -168,6 +171,10 @@
 
   .feature-card:nth-child(even) .feature-image {
     border-radius: 20px 20px 0 0;
+  }
+
+  .feature-content {
+    display: flex;
   }
 }
 
